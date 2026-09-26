@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
+    
     public string[] MinigameSceneNames;
 
     public void ChangeScene()
@@ -13,4 +14,5 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
+    
 }
