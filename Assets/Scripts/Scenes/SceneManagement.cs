@@ -1,11 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class SceneManagement : MonoBehaviour
+public class SceneManager : MonoBehaviour
 {
-    public string MinijuegoPaella;
    public void EnterMinigame()
     {
+        
         SceneManager.LoadScene(MinijuegoPaella);
     }
 }
