@@ -3,14 +3,23 @@ using UnityEngine;
 public class DesplazamientoLateral : MonoBehaviour
 {
     [SerializeField] private float distancia = 2f; 
+    [HideInInspector] public int posActual = 0;
 
     public void MoverIzquierda()
     {
-        transform.position += Vector3.left * distancia;
+        if(posActual > -2)
+        {
+            transform.position += Vector3.left * distancia;
+            posActual--;
+        }
     }
 
     public void MoverDerecha()
     {
-        transform.position += Vector3.right * distancia;
+        if(posActual < 2)
+        {
+            transform.position += Vector3.right * distancia;
+            posActual++;
+        }
     }
 }
