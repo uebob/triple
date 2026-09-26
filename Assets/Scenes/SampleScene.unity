@@ -553,9 +553,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1073322054}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 202f524477708b142961e61e587a2f35, type: 3}
+  m_Script: {fileID: 11500000, guid: 98aed3ed36eee554b8e79c88e3015b42, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SceneManager
+  m_EditorClassIdentifier: Assembly-CSharp::SceneChanger
+  MinigameSceneNames:
+  - Minigame1
 --- !u!1 &1191166018
 GameObject:
   m_ObjectHideFlags: 0
