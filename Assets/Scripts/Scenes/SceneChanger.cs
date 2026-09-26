@@ -9,4 +9,8 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(MinigameSceneNames[0]);
     }
+    public void ReturnScene()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
 }
