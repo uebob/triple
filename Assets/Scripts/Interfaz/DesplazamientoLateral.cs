@@ -2,17 +2,15 @@ using UnityEngine;
 
 public class DesplazamientoLateral : MonoBehaviour
 {
-    [SerializeField] private float distanciaPaso = 2f; 
-    [SerializeField] private float velocidad = 5f;
+    [SerializeField] private float distancia = 2f; 
 
     public void MoverIzquierda()
     {
-        transform.Translate(Vector3.left * velocidad * Time.deltaTime);
-        Debug.Log("mover izq");
+        transform.position += Vector3.left * distancia;
     }
 
     public void MoverDerecha()
     {
-        transform.Translate(Vector3.right * velocidad * Time.deltaTime);
+        transform.position += Vector3.right * distancia;
     }
 }
