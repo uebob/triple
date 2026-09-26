@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    
     public static GameManager Instance;
-    public bool[] completados = [false, false, false, false];
+    public bool[] completados = new bool[] { false, false, false, false };
 
     private void Awake()
     {
@@ -18,4 +19,5 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
 }
