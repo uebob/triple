@@ -645,11 +645,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1073322054 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7889909644527086182, guid: 407b7e1f8e116e44bb24d10c67575bf6, type: 3}
+--- !u!114 &1073322056 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5904690778601097400, guid: 407b7e1f8e116e44bb24d10c67575bf6, type: 3}
   m_PrefabInstance: {fileID: 5437083350532334522}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98aed3ed36eee554b8e79c88e3015b42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneChanger
 --- !u!1 &1166315272
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,13 +936,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1073322054}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1073322056}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: ChangeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
