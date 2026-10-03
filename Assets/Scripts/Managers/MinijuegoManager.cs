@@ -12,6 +12,5 @@ public class MinijuegoManager : MonoBehaviour
     public void CompletarMinijuego(int i)
     {
         GM.completados[i] = true;
-        Debug.Log(GM.completados[i]);
     }
 }
