@@ -11,7 +11,7 @@ public class NPCInteractivo : MonoBehaviour
     public Dialogo dialogoPorDefecto;
     public Dialogo dialogoMisionCompletada;
 
-    private void OnMouseDown()
+    private void OnMouseUp()
     {
         Dialogo dialogoAUsar;
         if (minijuego1completado == true)
