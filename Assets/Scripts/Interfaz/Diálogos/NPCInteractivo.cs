@@ -3,8 +3,11 @@ using UnityEngine;
 
 public class NPCInteractivo : MonoBehaviour
 {
+    //todas las condiciones que deberian existir antes de chequiar un dialogo (bloque de 6000 flags e ifs de undertale)
     public bool minijuego1completado;
-
+    
+    //variables especificas del NPC
+    public string nombre = "???";
     public Dialogo dialogoPorDefecto;
     public Dialogo dialogoMisionCompletada;
 
@@ -20,7 +23,7 @@ public class NPCInteractivo : MonoBehaviour
             dialogoAUsar = dialogoPorDefecto;
         }
 
-        DialogueManager.Instancia.IniciarDialogo(dialogoAUsar, AccionesAlTerminar);
+        DialogueManager.Instancia.IniciarDialogo(dialogoAUsar, nombre, AccionesAlTerminar);
     }
 
     private void AccionesAlTerminar()

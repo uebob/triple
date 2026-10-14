@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour
 
     public GameObject panelDialogo;
     public TextMeshProUGUI textoDialogo;
+    public TextMeshProUGUI textoNombre;
     public float velocidadEscritura = 0.05f;
 
     private string[] lineasActuales;
@@ -23,9 +24,10 @@ public class DialogueManager : MonoBehaviour
         else Destroy(gameObject);
     }
 
-    public void IniciarDialogo(Dialogo dialogo, Action callbackFinal = null)
+    public void IniciarDialogo(Dialogo dialogo, string nombre, Action callbackFinal = null)
     {
         lineasActuales = dialogo.lineas;
+        textoNombre.text = nombre;
         onDialogoTerminado = callbackFinal;
         indiceLinea = 0;
         
