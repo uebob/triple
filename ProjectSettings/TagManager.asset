@@ -7,6 +7,9 @@ TagManager:
   - GameManager
   - PanelDialogo
   - ManagerMinijuego1
+  - Undefined
+  - Naranjas
+  - Podridas
   layers:
   - Default
   - TransparentFX

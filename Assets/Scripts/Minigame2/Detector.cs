@@ -8,13 +8,13 @@ public class Detector : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
         Debug.Log("S");
-        if (collider.gameObject.CompareTag("Naranja"))
+        if (collider.gameObject.CompareTag("Naranjas"))
         {
             manager.naranjas++;
         }
-        else if (collider.gameObject.CompareTag("Podrida"))
+        else if (collider.gameObject.CompareTag("Podridas"))
         {
-            if(manager.naranjas >= 0)
+            if(manager.naranjas > 0)
             {
                 manager.naranjas--;
             }
