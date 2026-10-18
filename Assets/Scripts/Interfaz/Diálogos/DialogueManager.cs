@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-using TMPro; // Usa TextMeshPro para el texto
+using TMPro;
 using System;
 
 public class DialogueManager : MonoBehaviour

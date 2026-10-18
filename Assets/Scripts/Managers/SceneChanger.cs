@@ -6,15 +6,10 @@ public class SceneChanger : MonoBehaviour
     
     public string[] MinigameSceneNames;
 
-    public void ChangeScene()
+    public void ChangeToMinigame(int i)
     {
-        SceneManager.LoadScene(MinigameSceneNames[0]);
+        SceneManager.LoadScene(MinigameSceneNames[i-1]);
     }
-    public void ChangeScene2()
-    {
-        SceneManager.LoadScene(MinigameSceneNames[1]);
-    }
-
     public void ReturnScene()
     {
         SceneManager.LoadScene("SampleScene");
