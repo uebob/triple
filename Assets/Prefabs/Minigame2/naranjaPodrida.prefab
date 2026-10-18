@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -6550508111999497159}
   m_Layer: 0
   m_Name: naranjaPodrida
-  m_TagString: Podrida
+  m_TagString: Podridas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
