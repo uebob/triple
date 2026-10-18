@@ -14,7 +14,7 @@ public class Detector : MonoBehaviour
         }
         else if (collider.gameObject.CompareTag("Podrida"))
         {
-            if(naranjas >= 0)
+            if(manager.naranjas >= 0)
             {
                 manager.naranjas--;
             }
