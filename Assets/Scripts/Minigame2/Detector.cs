@@ -3,31 +3,23 @@ using UnityEngine;
 public class Detector : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private ManagerMin2 manager;
+    
     void OnTriggerEnter2D(Collider2D collider)
     {
         Debug.Log("S");
         if (collider.gameObject.CompareTag("Naranja"))
         {
-            Debug.Log("N");
+            manager.naranjas++;
         }
         else if (collider.gameObject.CompareTag("Podrida"))
         {
-            Debug.Log("P");
+            if(naranjas >= 0)
+            {
+                manager.naranjas--;
+            }
         }
-        else
-        {
-            Debug.Log("R");
-        }
+        
 
         Destroy(collider.gameObject);
     }

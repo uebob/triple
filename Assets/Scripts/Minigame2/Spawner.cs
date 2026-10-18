@@ -31,11 +31,11 @@ public class Spawner : MonoBehaviour
         int i = Random.Range(0, 3);
             if (prefabs[i] != null)
             {
-                // Generar una posición X aleatoria para cada objeto
+                
                 float xAleatoria = Random.Range(minX, maxX);
                 Vector3 posicionSpawn = new Vector3(xAleatoria, alturaFijaY, posicionZ);
 
-                // Crear el objeto en la escena
+                
                 Instantiate(prefabs[i], posicionSpawn, Quaternion.identity);
             }
         
