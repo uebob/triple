@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9da4256e1aa078419a70be9b0d4ebb7, type: 3}
   m_Name: Tomate
   m_EditorClassIdentifier: Assembly-CSharp::Dialogo
-  lineas: []
+  lineas:
+  - "\xA1Perfecto! Esta tomata lleva todo el oto\xF1o colgada en la cambra del mas para no estropearse. \xA1Nos har\xE1 un sofrito de 10!"
+  - "Vamos a a\xF1adirlo a la paella."

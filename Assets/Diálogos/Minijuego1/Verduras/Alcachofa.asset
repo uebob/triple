@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9da4256e1aa078419a70be9b0d4ebb7, type: 3}
   m_Name: Alcachofa
   m_EditorClassIdentifier: Assembly-CSharp::Dialogo
-  lineas: []
+  lineas:
+  - "\xA1Acierto! Han subido unas cuantas desde la costa y ahora en invierno est\xE1n en su mejor momento, tiernas y cerraditas."
+  - "\xA1A la paella!"

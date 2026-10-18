@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9da4256e1aa078419a70be9b0d4ebb7, type: 3}
   m_Name: Costilla
   m_EditorClassIdentifier: Assembly-CSharp::Dialogo
-  lineas: []
+  lineas:
+  - "\xA1Qu\xE9 rico! Justo ahora es \xE9poca de matanza. \xA1Esta costillita le dar\xE1 una sustancia tremenda a la paella!\""
+  - Se me hace la boca agua... vamos a ponerlo en la paella.

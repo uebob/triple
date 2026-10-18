@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9da4256e1aa078419a70be9b0d4ebb7, type: 3}
   m_Name: Cebolla
   m_EditorClassIdentifier: Assembly-CSharp::Dialogo
-  lineas: []
+  lineas:
+  - "\xA1Ay, ay, ay! Si le pones cebolla, el arroz se ablanda y quedar\xE1 pastoso. "
+  - "\xA1Queremos que quede  el grano suelto y con socarraet! Mejor busca otra cosa."

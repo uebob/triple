@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9da4256e1aa078419a70be9b0d4ebb7, type: 3}
   m_Name: Guisante
   m_EditorClassIdentifier: Assembly-CSharp::Dialogo
-  lineas: []
+  lineas:
+  - "\xA1Alto ah\xED, chef! Los guisantes son de primavera. En pleno invierno, la planta con las heladas de la monta\xF1a no tiene vainas, \xA1est\xE1 solo en flor! "
+  - Mejor buscamos otros ingredientes.
