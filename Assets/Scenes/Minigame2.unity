@@ -1128,6 +1128,8 @@ GameObject:
   - component: {fileID: 2021391896}
   - component: {fileID: 2021391898}
   - component: {fileID: 2021391899}
+  - component: {fileID: 2021391900}
+  - component: {fileID: 2021391901}
   m_Layer: 0
   m_Name: cesta_0
   m_TagString: Untagged
@@ -1268,75 +1270,45 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.6, y: 2.91}
   m_EdgeRadius: 0
---- !u!1001 &1783877718231707635
-PrefabInstance:
+--- !u!114 &2021391900
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8452199388875281207, guid: 419c7481926222a40825573afe5b1142, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2224103658982746250, guid: 419c7481926222a40825573afe5b1142, type: 3}
-      propertyPath: alturaLimite
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2224103658982746250, guid: 419c7481926222a40825573afe5b1142, type: 3}
-      propertyPath: velocidadCaida
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2972190351189681475, guid: 419c7481926222a40825573afe5b1142, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 2972190351189681475, guid: 419c7481926222a40825573afe5b1142, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.92
-      objectReference: {fileID: 0}
-    - target: {fileID: 2972190351189681475, guid: 419c7481926222a40825573afe5b1142, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2972190351189681475, guid: 419c7481926222a40825573afe5b1142, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2972190351189681475, guid: 419c7481926222a40825573afe5b1142, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2972190351189681475, guid: 419c7481926222a40825573afe5b1142, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2972190351189681475, guid: 419c7481926222a40825573afe5b1142, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2972190351189681475, guid: 419c7481926222a40825573afe5b1142, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2972190351189681475, guid: 419c7481926222a40825573afe5b1142, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2972190351189681475, guid: 419c7481926222a40825573afe5b1142, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4180361469884393632, guid: 419c7481926222a40825573afe5b1142, type: 3}
-      propertyPath: m_Name
-      value: naranja_0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 419c7481926222a40825573afe5b1142, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021391895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3891a1791111b354b9c49711a9152b59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Detector
+--- !u!50 &2021391901
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021391895}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1347,6 +1319,5 @@ SceneRoots:
   - {fileID: 1802491284}
   - {fileID: 1153961307}
   - {fileID: 1256174009}
-  - {fileID: 1783877718231707635}
   - {fileID: 2021391897}
   - {fileID: 643508134}
