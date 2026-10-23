@@ -1,6 +1,5 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
 public class Rosquilleta : MonoBehaviour
 {
     public float tamañoIdealX = 3f;
@@ -13,8 +12,8 @@ public class Rosquilleta : MonoBehaviour
     
     // Estados
     private bool estaAmasando = false;
-    private bool estaLista = false;
-    private bool estaRota = false;
+    public bool estaLista = false;
+    public bool estaRota = false;
 
     private SpriteRenderer spriteRenderer;
 
@@ -24,16 +23,14 @@ public class Rosquilleta : MonoBehaviour
         escalaInicial = transform.localScale;
     }
 
-    // Se activa solo si haces clic sobre el Collider2D de ESTA rosquilleta
     void OnMouseDown()
     {
-        if (estaLista || estaRota) return;
+        if (estaRota) return;
         
         posicionRatonAnterior = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         estaAmasando = true;
     }
 
-    // Se ejecuta cada frame mientras mantengas pulsado el clic sobre la rosquilleta
     void OnMouseDrag()
     {
         if (!estaAmasando || estaRota) return;
@@ -80,8 +77,7 @@ public class Rosquilleta : MonoBehaviour
     void MasaLista()
     {
         estaLista = true;
-        //aqui hay que hacer algo para que se sepa que está lista ya
-        Debug.Log(gameObject.name + " divina!!");
+        spriteRenderer.color = new Color(0.5f, 1f, 0.5f);
     }
 
     void RomperMasa()
