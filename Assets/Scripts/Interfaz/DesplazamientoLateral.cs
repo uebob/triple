@@ -7,6 +7,8 @@ public class DesplazamientoLateral : MonoBehaviour
 
     public void MoverIzquierda()
     {
+        if(DialogueManager.Instancia.isOnDialogue) return;
+
         if(posActual > -2)
         {
             transform.position += Vector3.left * distancia;
@@ -16,6 +18,8 @@ public class DesplazamientoLateral : MonoBehaviour
 
     public void MoverDerecha()
     {
+        if(DialogueManager.Instancia.isOnDialogue) return;
+        
         if(posActual < 2)
         {
             transform.position += Vector3.right * distancia;

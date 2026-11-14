@@ -16,6 +16,7 @@ public class HoverScaling : MonoBehaviour
 
     void Update()
     {
+        if(DialogueManager.Instancia.isOnDialogue) return;
         transform.localScale = Vector3.Lerp(transform.localScale, targetScale, Time.deltaTime * speed);
     }
 

@@ -17,6 +17,7 @@ public class DialogueManager : MonoBehaviour
     private int indiceLinea;
     private bool escribiendo;
     private Action onDialogoTerminado;
+    public bool isOnDialogue = false;
 
     private void Awake()
     {
@@ -26,6 +27,8 @@ public class DialogueManager : MonoBehaviour
 
     public void IniciarDialogo(Dialogo dialogo, string nombre, Action callbackFinal = null)
     {
+        isOnDialogue = true; 
+        
         lineasActuales = dialogo.lineas;
         textoNombre.text = nombre;
         onDialogoTerminado = callbackFinal;

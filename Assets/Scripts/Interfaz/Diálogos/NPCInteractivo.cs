@@ -14,6 +14,8 @@ public class NPCInteractivo : MonoBehaviour
 
     private void OnMouseUp()
     {
+        if(DialogueManager.Instancia.isOnDialogue) return;
+
         Dialogo dialogoAUsar;
         if (false) //cambiar luego cuando existan las flags
         {
