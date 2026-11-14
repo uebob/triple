@@ -1,22 +1,23 @@
+using Unity.Tutorials.Editor;
+using Unity.VectorGraphics;
 using UnityEngine;
 // Fíjate que hemos quitado el "using UnityEngine.Events"
 
 public class NPCInteractivo : MonoBehaviour
 {
-    //todas las condiciones que deberian existir antes de chequiar un dialogo (bloque de 6000 flags e ifs de undertale)
-    public bool minijuego1completado;
     
     //variables especificas del NPC
     public string nombre = "???";
     public Dialogo dialogoPorDefecto;
     public Dialogo dialogoMisionCompletada;
+    public string sceneChangeName;
 
     private void OnMouseUp()
     {
         Dialogo dialogoAUsar;
-        if (minijuego1completado == true)
+        if (false) //cambiar luego cuando existan las flags
         {
-            dialogoAUsar = dialogoMisionCompletada;
+            //dialogoAUsar = dialogoMisionCompletada;
         }
         else
         {
@@ -28,13 +29,9 @@ public class NPCInteractivo : MonoBehaviour
 
     private void AccionesAlTerminar()
     {
-        if (minijuego1completado == false)
+        if(sceneChangeName!=null)
         {
-
-        }
-        else
-        {
-            
+            GameObject.FindWithTag("GameManager").GetComponent<SceneChanger>().ChangeScene(sceneChangeName);
         }
     }
 }

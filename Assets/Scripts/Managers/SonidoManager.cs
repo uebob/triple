@@ -5,14 +5,6 @@ public class SonidoManager : MonoBehaviour
     
     [SerializeField] Slider volumeSlider;
 
-    
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     public void ChangeVolume()
     {
         AudioListener.volume = volumeSlider.value;

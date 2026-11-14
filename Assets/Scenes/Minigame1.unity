@@ -422,10 +422,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa483738f9167c4b98a443ad7bf552d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractivo
-  minijuego1completado: 0
   nombre: ???
   dialogoPorDefecto: {fileID: 11400000, guid: 783fbc6384a83c642acf275b3ffd6946, type: 2}
   dialogoMisionCompletada: {fileID: 0}
+  sceneChangeName: 
 --- !u!1 &508608658
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,6 +575,81 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 407b7e1f8e116e44bb24d10c67575bf6, type: 3}
+--- !u!1 &542031723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 542031724}
+  - component: {fileID: 542031726}
+  - component: {fileID: 542031725}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &542031724
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542031723}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1147631991}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &542031725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542031723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &542031726
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542031723}
+  m_CullTransparentMesh: 1
 --- !u!1 &590726608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,10 +1200,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa483738f9167c4b98a443ad7bf552d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractivo
-  minijuego1completado: 0
   nombre: ???
   dialogoPorDefecto: {fileID: 11400000, guid: 28db28fe45db6cf4494e2f62acc5cd40, type: 2}
   dialogoMisionCompletada: {fileID: 0}
+  sceneChangeName: 
 --- !u!1 &790325163
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,10 +1370,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa483738f9167c4b98a443ad7bf552d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractivo
-  minijuego1completado: 0
   nombre: ???
   dialogoPorDefecto: {fileID: 11400000, guid: 91acf41de0fee134085cbf46d142f836, type: 2}
   dialogoMisionCompletada: {fileID: 0}
+  sceneChangeName: 
 --- !u!1 &984371643
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,10 +1540,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa483738f9167c4b98a443ad7bf552d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractivo
-  minijuego1completado: 0
   nombre: ???
   dialogoPorDefecto: {fileID: 11400000, guid: 206aac7d8bed9554682e807b13a26d77, type: 2}
   dialogoMisionCompletada: {fileID: 0}
+  sceneChangeName: 
 --- !u!1 &1009704293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1635,10 +1710,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa483738f9167c4b98a443ad7bf552d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractivo
-  minijuego1completado: 0
   nombre: ???
   dialogoPorDefecto: {fileID: 11400000, guid: 03e7ee60d9ba08d4181bb84a2bb9a800, type: 2}
   dialogoMisionCompletada: {fileID: 0}
+  sceneChangeName: 
 --- !u!1 &1081950078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1776,6 +1851,135 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081950078}
   m_CullTransparentMesh: 1
+--- !u!1 &1147631985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1147631991}
+  - component: {fileID: 1147631990}
+  - component: {fileID: 1147631989}
+  - component: {fileID: 1147631988}
+  - component: {fileID: 1147631987}
+  - component: {fileID: 1147631986}
+  m_Layer: 5
+  m_Name: SceneFader
+  m_TagString: SceneFader
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1147631986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147631985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b525674e1f2de3d4688e95e9328c0515, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScreenFadeOut
+--- !u!225 &1147631987
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147631985}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1147631988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147631985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1147631989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147631985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1147631990
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147631985}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1147631991
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147631985}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 542031724}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1195314305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,10 +2146,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa483738f9167c4b98a443ad7bf552d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractivo
-  minijuego1completado: 0
   nombre: ???
   dialogoPorDefecto: {fileID: 11400000, guid: a11b3392592e79349b34b3ce871b5184, type: 2}
   dialogoMisionCompletada: {fileID: 0}
+  sceneChangeName: 
 --- !u!1 &1210125413
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,10 +2682,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa483738f9167c4b98a443ad7bf552d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractivo
-  minijuego1completado: 0
   nombre: ???
   dialogoPorDefecto: {fileID: 11400000, guid: 99ed50897dfe3824cbd31fd316df51e6, type: 2}
   dialogoMisionCompletada: {fileID: 0}
+  sceneChangeName: 
 --- !u!1 &1413165803
 GameObject:
   m_ObjectHideFlags: 0
@@ -3080,10 +3284,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa483738f9167c4b98a443ad7bf552d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteractivo
-  minijuego1completado: 0
   nombre: ???
   dialogoPorDefecto: {fileID: 11400000, guid: d77d7fe2369217748b180be91395f2b8, type: 2}
   dialogoMisionCompletada: {fileID: 0}
+  sceneChangeName: 
 --- !u!1 &1994939425
 GameObject:
   m_ObjectHideFlags: 0
@@ -3353,3 +3557,4 @@ SceneRoots:
   - {fileID: 1195314307}
   - {fileID: 772396711}
   - {fileID: 508608660}
+  - {fileID: 1147631991}

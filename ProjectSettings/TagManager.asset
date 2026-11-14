@@ -11,6 +11,7 @@ TagManager:
   - Naranjas
   - Podridas
   - Rosquilleta
+  - SceneFader
   layers:
   - Default
   - TransparentFX
