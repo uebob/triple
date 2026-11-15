@@ -8,53 +8,50 @@ public class ManagerMinijuego4 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public bool cocinado = false;
 
-    public GameObject winCanvas;
-
-    public GameObject loseCanvas;
-
     public GameObject botonRemover;
 
     public GameObject botonSacar;
     public int removerDelay = 3;
 
     public GameObject patatas;
+    public Dialogo dialogoQuemadas;
+    public Dialogo dialogoCocinadas;
+    public Dialogo dialogoDemasiadoPronto;
+    public bool actualizar = true;
+
 
     void Start()
     {
-        if(winCanvas.activeSelf) winCanvas.SetActive(false);
-        if(loseCanvas.activeSelf) loseCanvas.SetActive(false);
-
          if(!botonSacar.activeSelf) botonSacar.SetActive(true);
         if(botonRemover.activeSelf) botonRemover.SetActive(false);
 
         StartCoroutine(RemoverCount());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-        
-    }
-
     void Win()
     {
-        winCanvas.SetActive(true);
+        DialogueManager.Instancia.IniciarDialogo(dialogoCocinadas, "MINIJUEGOMANAGER1", AccionesAlTerminar);
     }
-    void Lose()
+    void Lose(Dialogo dialogo)
     {
-        loseCanvas.SetActive(true);
+        DialogueManager.Instancia.IniciarDialogo(dialogo, "MINIJUEGOMANAGER1", AccionesAlPerder);
     }
 
     public void Sacar()
     {
         if (cocinado)
         {
+            actualizar = false;
            Win(); 
         }
         else
         {
-            Lose();
+            Dialogo dialogo = null;
+            actualizar = false;
+
+            if(GameObject.FindWithTag("Patatas").GetComponent<Patatas>().estadoActual <= 1) dialogo = dialogoDemasiadoPronto;
+            if(GameObject.FindWithTag("Patatas").GetComponent<Patatas>().estadoActual > 2) dialogo = dialogoQuemadas;
+            Lose(dialogo);
         }
     }
 
@@ -78,5 +75,15 @@ public class ManagerMinijuego4 : MonoBehaviour
     public void Remover()
     {
         StartCoroutine(CorutinaRemover());
+    }
+
+    private void AccionesAlTerminar()
+    {
+        GameObject.FindWithTag("GameManager").GetComponent<SceneChanger>().ChangeScene("SampleScene");
+    }
+
+    private void AccionesAlPerder()
+    {
+        GameObject.FindWithTag("GameManager").GetComponent<SceneChanger>().ChangeScene("Minigame4");
     }
 }

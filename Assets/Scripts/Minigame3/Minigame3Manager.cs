@@ -5,21 +5,21 @@ using UnityEngine;
 public class Minigame3Manager : MonoBehaviour
 {
     public GameObject[] prefabRosquilletas;
-    [SerializeField] GameObject winCanvas;
-    [SerializeField] GameObject loseCanvas;
     public Dialogo dialogoFaltaAmasar;
+    public Dialogo dialogoPerdido;
+    public Dialogo dialogoGanado;
+    private bool won = false;
 
     void Start()
     {
         prefabRosquilletas = GameObject.FindGameObjectsWithTag("Rosquilleta");
-        winCanvas.SetActive(false);
-        loseCanvas.SetActive(false);
     }
 
     public void Cocinar()
     {
         if(PuedeCocinar())
         {
+            if(!won)
             Win();
         }
     }
@@ -57,12 +57,21 @@ public class Minigame3Manager : MonoBehaviour
 
     void Lose()
     {
-        loseCanvas.SetActive(true);
+        DialogueManager.Instancia.IniciarDialogo(dialogoPerdido, "MINIJUEGOMANAGER1", AccionesAlPerder);
+    }
+
+    private void AccionesAlPerder()
+    {
+        GameObject.FindWithTag("GameManager").GetComponent<SceneChanger>().ChangeScene("Minigame3");
     }
 
     void Win()
     {
-        Debug.Log("Cocinar!");
-        winCanvas.SetActive(true);
+        DialogueManager.Instancia.IniciarDialogo(dialogoGanado, "MINIJUEGOMANAGER1", AccionesAlGanar);
+    }
+
+    private void AccionesAlGanar()
+    {
+        GameObject.FindWithTag("GameManager").GetComponent<SceneChanger>().ChangeScene("SampleScene");
     }
 }

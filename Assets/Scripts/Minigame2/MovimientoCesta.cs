@@ -11,11 +11,13 @@ public class MovimientoCesta : MonoBehaviour
 
     void Update()
     {
-        
-        Vector3 posicionRatonPantalla = Input.mousePosition;
+        if(!GameObject.FindWithTag("ManagerMinijuego1").GetComponent<ManagerMin2>().stopSpawn)
+        {
+            Vector3 posicionRatonPantalla = Input.mousePosition;
 
-        Vector3 posicionMundo = camaraPrincipal.ScreenToWorldPoint(posicionRatonPantalla);
+            Vector3 posicionMundo = camaraPrincipal.ScreenToWorldPoint(posicionRatonPantalla);
 
-        transform.position = new Vector3(posicionMundo.x, transform.position.y, transform.position.z);
+            transform.position = new Vector3(posicionMundo.x, transform.position.y, transform.position.z);
+        }
     }
 }

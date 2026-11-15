@@ -10,7 +10,7 @@ public class NPCInteractivo : MonoBehaviour
     public string nombre = "???";
     public Dialogo dialogoPorDefecto;
     public Dialogo dialogoMisionCompletada;
-    public string sceneChangeName;
+    public string sceneChangeName = null;
 
     private void OnMouseUp()
     {
@@ -25,13 +25,12 @@ public class NPCInteractivo : MonoBehaviour
         {
             dialogoAUsar = dialogoPorDefecto;
         }
-
         DialogueManager.Instancia.IniciarDialogo(dialogoAUsar, nombre, AccionesAlTerminar);
     }
 
     private void AccionesAlTerminar()
     {
-        if(sceneChangeName!=null)
+        if(!string.IsNullOrEmpty(sceneChangeName))
         {
             GameObject.FindWithTag("GameManager").GetComponent<SceneChanger>().ChangeScene(sceneChangeName);
         }

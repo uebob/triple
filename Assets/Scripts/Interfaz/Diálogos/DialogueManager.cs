@@ -82,6 +82,7 @@ public class DialogueManager : MonoBehaviour
         {
             panelDialogo.SetActive(false);
             //ejecuta codigo remoto
+            isOnDialogue = false;
             onDialogoTerminado?.Invoke();
         }
     }

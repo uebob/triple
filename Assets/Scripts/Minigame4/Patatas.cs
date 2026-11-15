@@ -4,7 +4,7 @@ public class Patatas : MonoBehaviour
 {
     public Sprite[] estados;
     public int delay = 10;
-    private int estadoActual = 0;
+    public int estadoActual = 0;
     public ManagerMinijuego4 manager4;
 
     private bool estaRemoviendo = false;
@@ -16,10 +16,14 @@ public class Patatas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!estaRemoviendo)
+        if(GameObject.FindWithTag("ManagerMinijuego1").GetComponent<ManagerMinijuego4>().actualizar)
+        {
+            if (!estaRemoviendo)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = estados[estadoActual];
         }
+        }
+        
         
         
     }

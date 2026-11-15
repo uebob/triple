@@ -16,13 +16,15 @@ public class Spawner : MonoBehaviour
     public int timerLimit = 40;
     void FixedUpdate()
     {
-        timer++;
-        if (timer > timerLimit)
+        if(!GameObject.FindWithTag("ManagerMinijuego1").GetComponent<ManagerMin2>().stopSpawn)
         {
-            SpawnearObjetos();
-            timer = 0;
+            timer++;
+            if (timer > timerLimit)
+            {
+                SpawnearObjetos();
+                timer = 0;
+            }
         }
-        
     }
 
     void SpawnearObjetos()
