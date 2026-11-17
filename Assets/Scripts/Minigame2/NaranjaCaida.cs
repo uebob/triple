@@ -19,7 +19,6 @@ public class NaranjaCaida : MonoBehaviour
     void Update()
     {
         
-        
 
         // Comprueba si el objeto ya pasó o llegó a la altura límite
         if (transform.position.y <= alturaLimite)

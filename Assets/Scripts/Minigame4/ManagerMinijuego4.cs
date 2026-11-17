@@ -79,6 +79,7 @@ public class ManagerMinijuego4 : MonoBehaviour
 
     private void AccionesAlTerminar()
     {
+        GameObject.FindWithTag("GameManager").GetComponent<GameManager>().completados[3] = true;
         GameObject.FindWithTag("GameManager").GetComponent<SceneChanger>().ChangeScene("SampleScene");
     }
 

@@ -27,6 +27,6 @@ public class PausarMenu : MonoBehaviour
     public void SalirGame()
     {
         
-        Application.Quit();
+        GameObject.FindWithTag("GameManager").GetComponent<SceneChanger>().ChangeScene("MainMenu");
     }
 }

@@ -7,6 +7,8 @@ public class Detector : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D collider)
     {
+        if(GameObject.FindWithTag("ManagerMinijuego1").GetComponent<ManagerMin2>().stopSpawn) return;
+        
         Debug.Log("S");
         if (collider.gameObject.CompareTag("Naranjas"))
         {

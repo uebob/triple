@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 2f0dfebc3c5d0344a8cb11fca68f33b7
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
@@ -20,5 +23,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigame4.unity
     guid: d17e93d4acfb63242975ee4df18c1476
+  - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: e97bb23346d83eb4caec676ea564274d
+  - enabled: 1
+    path: Assets/Scenes/FinalScene.unity
+    guid: 10ac70a5ca400ea48b8813c4d4b293ad
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

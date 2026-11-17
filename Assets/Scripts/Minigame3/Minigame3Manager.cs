@@ -72,6 +72,7 @@ public class Minigame3Manager : MonoBehaviour
 
     private void AccionesAlGanar()
     {
+        GameObject.FindWithTag("GameManager").GetComponent<GameManager>().completados[2] = true;
         GameObject.FindWithTag("GameManager").GetComponent<SceneChanger>().ChangeScene("SampleScene");
     }
 }
